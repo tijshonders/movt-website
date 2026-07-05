@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "MOVT Projects — Specialist in PVC Visgraat & Vloeren",
     description:
       "Vakmanschap in elke vloer. PVC visgraat, gietvloeren, tapijttegels en meer door heel Nederland.",
-    images: ["/projects/commercial/kantoor-visgraat-lounge.jpg"],
+    images: ["/brand/og-image.jpg"],
   },
   robots: {
     index: true,

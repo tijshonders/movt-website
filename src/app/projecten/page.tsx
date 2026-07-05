@@ -4,9 +4,10 @@ import { projects } from "@/data/projects";
 import { ProjectFilter } from "@/components/ProjectFilter";
 
 export const metadata: Metadata = {
-  title: "Onze Projecten",
+  title: "Onze Projecten — Vloeren in Rhenen, Lienden & de Betuwe",
   description:
-    "Bekijk het werk van MOVT Projects. Van particuliere woningen tot grote commerciële projecten — PVC visgraat, gietvloeren, designvloeren en meer.",
+    "Bekijk het werk van MOVT Projects in Rhenen, Lienden, de Betuwe en omstreken. Van particuliere woningen tot grote commerciële projecten — PVC visgraat, gietvloeren en meer.",
+  alternates: { canonical: "https://movt.nl/projecten" },
   openGraph: {
     title: "Onze Projecten | MOVT Projects",
     description:

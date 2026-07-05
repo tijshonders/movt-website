@@ -4,9 +4,10 @@ import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Over Ons",
+    title: "Over Ons — Vloerenspecialist uit de regio Rhenen-Lienden",
     description:
-      "Leer meer over MOVT Projects en oprichter Mitch Onink. Vakmanschap, passie voor vloeren en persoonlijke service door heel Nederland.",
+      "Leer meer over MOVT Projects en oprichter Mitch Onink. Vloerenspecialist uit de regio Rhenen-Lienden met vakmanschap en persoonlijke service.",
+    alternates: { canonical: "https://movt.nl/over-ons" },
     openGraph: {
       title: "Over MOVT Projects",
       description:

@@ -3,9 +3,10 @@ import { ContactForm } from "@/components/ContactForm";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Contact & Offerte Aanvragen",
+    title: "Contact & Offerte Aanvragen — Rhenen, Lienden & de Betuwe",
     description:
-      "Neem contact op met MOVT Projects voor een vrijblijvende offerte. Bel, mail of WhatsApp ons direct. Wij zijn door heel Nederland actief.",
+      "Neem contact op met MOVT Projects voor een vrijblijvende offerte in Rhenen, Lienden, Veenendaal, Tiel of de Betuwe. Bel, mail of WhatsApp direct.",
+    alternates: { canonical: "https://movt.nl/contact" },
     openGraph: {
       title: "Contact & Offerte Aanvragen | MOVT Projects",
       description:
