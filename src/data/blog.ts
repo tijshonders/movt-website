@@ -10,7 +10,7 @@ export interface BlogPost {
   metaTitle: string;
   metaDescription: string;
   excerpt: string;
-  city: "Rhenen" | "Lienden" | "Veenendaal" | "Tiel";
+  city: "Rhenen" | "Lienden" | "Veenendaal" | "Tiel" | "Betuwe";
   date: string;
   image: string;
   sections: BlogSection[];
@@ -547,6 +547,323 @@ export const blogPosts: BlogPost[] = [
         question: "In welke volgorde voeren jullie de werkzaamheden uit?",
         answer:
           "Eerst wandvoorbereiding en sauswerk/behang, dan de vloer, dan trap en afwerking. Zo beschadigt niets en is het eindresultaat strak.",
+      },
+    ],
+  },
+
+  // ============ LIENDEN EXTRA (2) ============
+  {
+    slug: "laminaat-lienden",
+    title: "Laminaat in Lienden: betaalbaar, mooi en snel gelegd",
+    metaTitle: "Laminaat Lienden | Leveren & Leggen | MOVT Projects",
+    metaDescription:
+      "Laminaat kopen en laten leggen in Lienden? MOVT Projects levert A-merk laminaat inclusief legservice, vanaf ca. €35 per m². Gratis inmeting in heel de Betuwe.",
+    excerpt:
+      "Laminaat blijft de slimste budgetkeuze: mooi, slijtvast en snel gelegd. MOVT levert en legt A-merk laminaat door heel Lienden en omgeving.",
+    city: "Lienden",
+    date: "2026-06-10",
+    image: "/projects/residential/woonkamer-visgraat-licht.jpg",
+    sections: [
+      {
+        paragraphs: [
+          "Niet elke ruimte vraagt om PVC of een gietvloer. Voor slaapkamers, zolders, studentenkamers of een strak budget is laminaat nog altijd een uitstekende keuze. MOVT Projects levert en legt A-merk laminaat in Lienden, Ommeren, Ingen en de rest van de Betuwe — vaak al binnen één dag.",
+        ],
+      },
+      {
+        heading: "Modern laminaat is niet meer wat het was (gelukkig)",
+        paragraphs: [
+          "Wie bij laminaat aan de jaren '90 denkt, moet echt eens komen kijken. Modern A-merk laminaat heeft diepe houtstructuren, V-groeven en registered embossing — nauwelijks van echt hout te onderscheiden. En met de juiste ondervloer is het ook nog eens stil en geschikt voor vloerverwarming.",
+        ],
+        list: [
+          "Vanaf circa €35 per m² inclusief leggen",
+          "Slijtvast: klasse AC4/AC5 voor intensief gebruik",
+          "Ook in visgraat-look verkrijgbaar",
+          "Sneller gelegd dan elke andere vloer: gemiddelde kamer in een halve dag",
+        ],
+      },
+      {
+        heading: "Eerlijk advies: laminaat of toch PVC?",
+        paragraphs: [
+          "Wij verkopen beide, dus wij adviseren eerlijk. Vuistregel: veel vocht (keuken, hal) of maximale stilte gewenst? Dan PVC. Slaapkamers, zolder of budget leidend? Dan is laminaat onverslaanbaar qua prijs-kwaliteit.",
+          "Twijfelt u? Wij komen gratis langs in Lienden met stalen van beide — dan ziet u het verschil in uw eigen woonkamer. Plan een adviesgesprek.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Hoe snel kan laminaat gelegd worden in Lienden?",
+        answer:
+          "Na akkoord meestal binnen twee weken. Het leggen zelf: een gemiddelde woonkamer is in een halve tot hele dag klaar, inclusief plinten.",
+      },
+      {
+        question: "Is laminaat geschikt voor vloerverwarming?",
+        answer:
+          "Ja, mits gekozen voor laminaat met een lage warmteweerstand en de juiste ondervloer. Wij adviseren hierover tijdens de inmeting.",
+      },
+    ],
+  },
+  {
+    slug: "trap-renovatie-lienden",
+    title: "Trap renovatie in Lienden: maak de trap net zo mooi als uw vloer",
+    metaTitle: "Trap Renovatie Lienden | In 1-2 Dagen Klaar | MOVT Projects",
+    metaDescription:
+      "Trap renoveren in Lienden? MOVT Projects bekleedt uw trap met PVC of hout, passend bij uw vloer. Zonder sloopwerk, binnen 1-2 dagen klaar. Gratis advies.",
+    excerpt:
+      "Uw trap dagelijks in het zicht en nog steeds gedateerd? MOVT renoveert trappen in Lienden zonder sloopwerk — binnen twee dagen een compleet nieuwe look.",
+    city: "Lienden",
+    date: "2026-06-03",
+    image: "/projects/residential/hal-visgraat-licht.jpg",
+    sections: [
+      {
+        paragraphs: [
+          "De trap is vaak het eerste wat bezoekers zien als ze binnenkomen — en het laatste wat wordt aangepakt bij een verbouwing. Zonde, want een traprenovatie is sneller en voordeliger dan de meeste mensen denken. MOVT Projects renoveert trappen door heel Lienden en de Betuwe.",
+        ],
+      },
+      {
+        heading: "Zo pakken wij uw trap aan",
+        paragraphs: [
+          "Wij bekleden uw bestaande trap met hoogwaardig PVC of hout. De constructie blijft intact — geen breekwerk, geen stof door het hele huis. Treden, stootborden en zijkanten worden strak afgewerkt, desgewenst met anti-slip en LED-verlichting.",
+        ],
+        list: [
+          "Binnen 1-2 dagen klaar, trap blijft beloopbaar",
+          "Perfect passend bij uw PVC- of laminaatvloer",
+          "Anti-slip toplaag: veilig voor kinderen en ouderen",
+          "Optioneel: LED-spots in de stootborden",
+        ],
+      },
+      {
+        heading: "Populair in Lienden: trap + vloer in één project",
+        paragraphs: [
+          "De meeste klanten combineren de traprenovatie met een nieuwe vloer beneden of boven. Eén stijl door het hele huis, één planning en een scherper combitarief. Bekijk ook onze volledig interieur aanpak — of vraag direct een gratis offerte aan voor uw trap in Lienden.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Wat kost een traprenovatie in Lienden?",
+        answer:
+          "Gemiddeld €800 tot €2.500 afhankelijk van aantal treden, open/dichte trap en materiaal. Na een gratis opname weet u de exacte prijs.",
+      },
+      {
+        question: "Kan de trap tijdens de renovatie gebruikt worden?",
+        answer:
+          "Ja, we werken de trap tree voor tree af zodat u er tussendoor gewoon op kunt. 's Avonds is de trap altijd beloopbaar.",
+      },
+    ],
+  },
+
+  // ============ BETUWE (2) ============
+  {
+    slug: "vloerenspecialist-betuwe",
+    title: "Vloerenspecialist in de Betuwe: van Kesteren tot Maurik, wij leggen 'm",
+    metaTitle: "Vloerenspecialist Betuwe | PVC, Laminaat & Gietvloeren | MOVT",
+    metaDescription:
+      "Vloer nodig in de Betuwe? MOVT Projects legt PVC, visgraat, laminaat en gietvloeren in Kesteren, Ochten, Opheusden, Maurik, Ingen en heel de regio. Gratis offerte.",
+    excerpt:
+      "MOVT Projects is dé vloerenspecialist van de Betuwe. Van dijkwoning tot nieuwbouw: wij kennen de woningen hier en leggen elke vloer vakkundig.",
+    city: "Betuwe",
+    date: "2026-05-14",
+    image: "/projects/residential/woonkamer-visgraat-donker.jpg",
+    sections: [
+      {
+        paragraphs: [
+          "De Betuwe is ons thuis. MOVT Projects is gevestigd in de regio en legt vloeren van Kesteren tot Maurik, van Opheusden tot Ochten, en alles daartussen: Ingen, Ommeren, Lienden, Eck en Wiel, IJzendoorn, Echteld en Dodewaard.",
+          "Dat lokale is meer dan een marketingpraatje. Wie hier vloeren legt, kent de uitdagingen: oudere dijkwoningen met wisselende vochtigheid, boerderijen met scheve ondervloeren en nieuwbouwwijken waar alles op vloerverwarming draait.",
+        ],
+      },
+      {
+        heading: "Elke Betuwse woning zijn eigen aanpak",
+        paragraphs: [
+          "Een dijkwoning uit 1920 vraagt om een andere opbouw dan een nieuwbouwwoning in Kesteren. Daarom beginnen wij altijd met een grondige inmeting: vochtmeting, vlakheid, ondergrond. Pas dan adviseren we een vloer — en niet andersom.",
+        ],
+        list: [
+          "Oudere woningen: vochtwerende opbouw en egalisatie",
+          "Nieuwbouw: dunne, warmtegeleidende PVC voor vloerverwarming",
+          "Boerderijen en bedrijfsruimtes: naadloze gietvloeren of extreem slijtvast PVC",
+          "Appartementen: geluiddempende opbouw conform VvE-eisen",
+        ],
+      },
+      {
+        heading: "Van eerste appje tot oplevering",
+        paragraphs: [
+          "Bel of app ons, en we staan deze week nog bij u op de stoep — dat is het voordeel van een specialist uit de eigen regio. Gratis inmeting, binnen 48 uur een offerte, en garantie op materiaal én legwerk.",
+          "Bekijk onze projecten in de regio of vraag direct een offerte aan.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "In welke plaatsen in de Betuwe werken jullie?",
+        answer:
+          "In de hele Neder-Betuwe en Buren: Lienden, Kesteren, Ochten, Opheusden, IJzendoorn, Echteld, Dodewaard, Maurik, Ingen, Ommeren, Eck en Wiel en omstreken. Plus Rhenen, Veenendaal en Tiel.",
+      },
+      {
+        question: "Rekenen jullie voorrijkosten in de Betuwe?",
+        answer: "Nee. Binnen ons kerngebied — de hele Betuwe en omstreken — rekenen wij geen voorrijkosten.",
+      },
+      {
+        question: "Kunnen jullie ook oude vloeren verwijderen?",
+        answer:
+          "Ja, verwijderen en afvoeren van uw oude vloer nemen we desgewenst mee in de offerte. Ook lijmresten en oude egalisatie halen we weg.",
+      },
+    ],
+  },
+  {
+    slug: "pvc-visgraat-dijkwoning-boerderij-betuwe",
+    title: "PVC visgraat in een dijkwoning of boerderij? Zo doe je dat in de Betuwe",
+    metaTitle: "PVC Visgraat Betuwe | Dijkwoningen & Boerderijen | MOVT Projects",
+    metaDescription:
+      "PVC visgraat in een oudere woning in de Betuwe? MOVT Projects legt visgraatvloeren in dijkwoningen en boerderijen — inclusief vochtmeting en egalisatie.",
+    excerpt:
+      "Karakteristieke Betuwse woningen verdienen een vloer met karakter. Maar oudere ondergronden vragen vakkennis — zo legt MOVT visgraat in dijkwoningen en boerderijen.",
+    city: "Betuwe",
+    date: "2026-05-07",
+    image: "/projects/residential/slaapkamer-visgraat-donker.jpg",
+    sections: [
+      {
+        paragraphs: [
+          "De Betuwe staat vol karakteristieke woningen: dijkhuizen, boerderijen, arbeiderswoningen van honderd jaar oud. Prachtig — maar wie er een moderne vloer in wil, loopt tegen uitdagingen aan die je in nieuwbouw niet hebt. Vocht, scheve vloeren, oude houten delen.",
+          "Goed nieuws: met de juiste voorbereiding ligt PVC visgraat óók in deze woningen strak en blijft dat decennialang. Het geheim zit in de opbouw.",
+        ],
+      },
+      {
+        heading: "Stap 1: meten, niet gokken",
+        paragraphs: [
+          "Bij oudere Betuwse woningen doen wij altijd een vochtmeting en vlakheidsmeting vóór we iets adviseren. Optrekkend vocht in combinatie met een dampdichte PVC-vloer is vragen om problemen — dat moet je vooraf weten, niet achteraf ontdekken.",
+        ],
+      },
+      {
+        heading: "Stap 2: de juiste opbouw",
+        paragraphs: [
+          "Afhankelijk van de meting kiezen we de opbouw: vochtscherm, egalisatie (soms meerdere lagen bij scheve vloeren), of bij houten vloeren eerst een uitvlakplaat. Pas op een perfect vlakke, droge ondergrond komt het visgraatpatroon tot zijn recht — elk plankje telt.",
+        ],
+        list: [
+          "Vochtscherm bij optrekkend vocht",
+          "Egalisatie tot op de millimeter vlak",
+          "Uitvlakplaten over oude houten vloeren",
+          "Randisolatie tegen kruip van oude muren",
+        ],
+      },
+      {
+        heading: "Het resultaat: klassiek patroon, modern comfort",
+        paragraphs: [
+          "Visgraat past wonderlijk goed bij landelijke en historische interieurs — het patroon bestaat al eeuwen. Maar dan met de voordelen van nu: warm aan de voeten, geluiddempend, waterbestendig en onderhoudsarm.",
+          "Woont u in een karakteristieke woning in de Betuwe en twijfelt u of PVC kan? Vraag een gratis inspectie aan — wij vertellen u eerlijk wat er mogelijk is.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Kan PVC over een oude houten vloer?",
+        answer:
+          "Ja, mits de houten vloer stabiel is. We leggen er uitvlakplaten overheen zodat de PVC strak en zonder veerkracht ligt.",
+      },
+      {
+        question: "Wat als er vocht in de kruipruimte zit?",
+        answer:
+          "Dan plaatsen we eerst een vochtscherm of adviseren we bodemisolatie. Vocht negeren is de grootste fout die je bij oudere woningen kunt maken.",
+      },
+    ],
+  },
+
+  // ============ TIEL EXTRA (2) ============
+  {
+    slug: "pvc-visgraat-tiel",
+    title: "PVC visgraat in Tiel: de vloertrend die niet meer weggaat",
+    metaTitle: "PVC Visgraat Tiel | Leveren & Leggen | MOVT Projects",
+    metaDescription:
+      "PVC visgraat vloer in Tiel? MOVT Projects levert en legt A-merk visgraatvloeren in heel Tiel en Passewaaij. Gratis inmeting en advies aan huis. Vraag offerte aan.",
+    excerpt:
+      "Van Passewaaij tot het centrum: PVC visgraat is dé vloerkeuze in Tiel. Lees wat het kost en waarom het patroon zo goed werkt in elk interieur.",
+    city: "Tiel",
+    date: "2026-04-30",
+    image: "/projects/commercial/kantoor-visgraat-groot.jpg",
+    sections: [
+      {
+        paragraphs: [
+          "Sommige trends waaien over, andere blijken blijvers. PVC visgraat hoort duidelijk bij die laatste categorie: het klassieke patroon bestaat al sinds de zeventiende eeuw en is populairder dan ooit. Ook in Tiel leggen wij wekelijks visgraatvloeren — van appartementen in het centrum tot gezinswoningen in Passewaaij.",
+        ],
+      },
+      {
+        heading: "Waarom visgraat werkt in élk interieur",
+        paragraphs: [
+          "Het geheim van visgraat: het patroon geeft diepte en beweging aan een ruimte. In kleine kamers maakt het de vloer optisch groter, in grote ruimtes voorkomt het dat de vloer saai wordt. Combineer het met een lichte eiken-look voor Scandinavisch, of donker gerookt voor klassiek-chic.",
+        ],
+        list: [
+          "Licht eiken: ruimtelijk en Scandinavisch",
+          "Naturel: tijdloos en warm",
+          "Donker gerookt: klassiek en statig",
+          "Grijs: modern en industrieel",
+        ],
+      },
+      {
+        heading: "Wat kost PVC visgraat in Tiel?",
+        paragraphs: [
+          "Reken op €70 tot €110 per m² volledig inclusief: A-merk PVC, egaliseren, leggen en plinten. De exacte prijs hangt af van het merk en de staat van uw ondervloer. Wij komen gratis inmeten in heel Tiel — u ontvangt binnen 48 uur een offerte zonder verrassingen.",
+          "Bekijk onze PVC visgraat pagina voor alle kleuren en merken, of plan direct een gratis adviesgesprek.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Hoe lang duurt het leggen van visgraat in een gemiddelde woonkamer?",
+        answer:
+          "Visgraat is bewerkelijker dan rechte planken: reken op twee tot drie dagen voor een gemiddelde woonkamer, inclusief egaliseren.",
+      },
+      {
+        question: "Is visgraat duurder dan rechte PVC planken?",
+        answer:
+          "Ja, circa €15 tot €25 per m² meer door het bewerkelijkere legwerk. Het effect op uw interieur is het verschil dubbel en dwars waard.",
+      },
+    ],
+  },
+  {
+    slug: "behang-wandafwerking-tiel",
+    title: "Behang en wandafwerking in Tiel: de finishing touch van uw interieur",
+    metaTitle: "Behangen in Tiel | Behang & Wandafwerking | MOVT Projects",
+    metaDescription:
+      "Professioneel behangwerk in Tiel? MOVT Projects verzorgt luxe behang, sauswerk en complete wandafwerking. Ook in combinatie met uw nieuwe vloer. Gratis advies.",
+    excerpt:
+      "Strakke wanden maken het verschil tussen 'net af' en 'wauw'. MOVT verzorgt professioneel behang- en sauswerk in Tiel — los of gecombineerd met uw vloer.",
+    city: "Tiel",
+    date: "2026-04-23",
+    image: "/projects/commercial/kantoor-geometrisch.jpg",
+    sections: [
+      {
+        paragraphs: [
+          "U investeert in een prachtige nieuwe vloer — en dan vallen ineens de wanden op. Oneffenheden, gedateerd behang, een kleur die nét niet meer past. Herkenbaar? Daarom biedt MOVT Projects in Tiel naast vloeren ook complete wandafwerking: behang, sauswerk en alles wat daarbij komt kijken.",
+        ],
+      },
+      {
+        heading: "Wat wij doen aan uw wanden",
+        paragraphs: [
+          "Van één accentwand tot alle wanden in huis. Wij verwijderen oud behang, herstellen en egaliseren de ondergrond en werken af naar wens:",
+        ],
+        list: [
+          "Luxe vinyl- en vliesbehang van A-merken",
+          "Fotobehang en maatwerk prints — uw eigen ontwerp kan ook",
+          "Strak sauswerk in elke RAL- of merkkleur",
+          "Renovlies voor beschadigde wanden: strak zonder stukadoor",
+        ],
+      },
+      {
+        heading: "Vloer + wand in Tiel: één team, één resultaat",
+        paragraphs: [
+          "Het grootste voordeel zit in de combinatie. Wij stemmen wandkleur en vloerkeuze op elkaar af, plannen de werkzaamheden in de juiste volgorde en u heeft één aanspreekpunt. Sneller klaar, geen afstemmingsgedoe tussen verschillende partijen, en voordeliger door ons combitarief.",
+          "Bekijk onze behang dienstenpagina of vraag een gratis adviesgesprek aan bij u thuis in Tiel.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Wat kost behangen in Tiel?",
+        answer:
+          "Professioneel behangwerk kost €12 tot €30 per m² afhankelijk van het behangtype en de staat van de wand. Renovlies + sauswerk vanaf circa €18 per m².",
+      },
+      {
+        question: "Kunnen jullie ook alleen één accentwand doen?",
+        answer:
+          "Zeker, een enkele fotobehang- of accentwand doen we regelmatig. Klein werk is bij ons ook welkom.",
       },
     ],
   },
