@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://movtprojects.nl"),
+  metadataBase: new URL("https://movt.nl"),
   title: {
     default: "MOVT Projects — Specialist in PVC Visgraat & Vloeren",
     template: "%s | MOVT Projects",
