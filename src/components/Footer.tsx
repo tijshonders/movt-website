@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LogoMark from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -11,10 +12,13 @@ export default function Footer() {
           {/* Column 1: Logo & Social */}
           <div className="space-y-6">
             <div>
-              <h3 className="font-heading text-2xl font-bold tracking-tight">
-                MOVT <span className="text-gold">Projects</span>
-              </h3>
-              <p className="text-cream-dark mt-2 text-sm">
+              <div className="flex items-center gap-3">
+                <LogoMark className="h-12 w-12 text-cream" />
+                <h3 className="font-heading text-2xl font-bold tracking-tight">
+                  MOVT <span className="text-gold">Projects</span>
+                </h3>
+              </div>
+              <p className="text-cream-dark mt-3 text-sm">
                 Vakmanschap in elke vloer
               </p>
             </div>

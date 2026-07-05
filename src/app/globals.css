@@ -12,8 +12,8 @@
   --color-grey: #8A8A8A;
   --color-grey-light: #B5B5B5;
 
-  --font-heading: var(--font-sora);
-  --font-body: var(--font-inter);
+  --font-heading: var(--font-cinzel);
+  --font-body: var(--font-josefin);
 }
 
 html {
@@ -24,11 +24,34 @@ body {
   background: var(--color-cream);
   color: var(--color-charcoal);
   font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 1.0625rem;
   overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading), system-ui, sans-serif;
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+/* Touch optimization — kill 300ms tap delay */
+a, button, [role="button"], input, select, textarea {
+  touch-action: manipulation;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+/* Visible gold focus for keyboard nav */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Safe area for fixed bottom bars (notch devices) */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 ::selection {

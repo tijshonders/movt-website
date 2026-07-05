@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import LogoMark from '@/components/Logo';
 
 const services = [
   { name: 'PVC Visgraat', href: '/diensten/pvc-visgraat' },
@@ -54,19 +55,26 @@ export default function Header() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-charcoal shadow-lg shadow-black/20'
+            ? 'bg-charcoal/85 shadow-lg shadow-black/20 backdrop-blur-lg'
             : 'bg-transparent'
         }`}
       >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="relative z-10 flex flex-col items-start">
-              <span className="text-2xl font-bold uppercase tracking-[0.25em] text-cream">
-                MOVT
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-gold">
-                Projects
+            <Link
+              href="/"
+              className="relative z-10 flex items-center gap-3"
+              aria-label="MOVT Projects — Home"
+            >
+              <LogoMark className="h-10 w-10 text-cream" />
+              <span className="flex flex-col items-start">
+                <span className="font-heading text-xl font-bold uppercase tracking-[0.25em] text-cream">
+                  MOVT
+                </span>
+                <span className="font-body text-[10px] font-medium uppercase tracking-[0.35em] text-gold">
+                  Projects
+                </span>
               </span>
             </Link>
 

@@ -91,7 +91,7 @@ export default function Home() {
   return (
     <>
       {/* ============ HERO ============ */}
-      <section className="grain relative flex h-screen items-end overflow-hidden bg-charcoal-dark">
+      <section className="grain relative flex h-dvh min-h-[560px] items-end overflow-hidden bg-charcoal-dark">
         <HeroSlideshow />
         <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/85 via-black/35 to-black/20" />
 
@@ -103,12 +103,12 @@ export default function Home() {
             </p>
           </div>
 
-          <h1 className="font-heading text-[13vw] leading-[0.95] font-semibold text-cream sm:text-7xl md:text-8xl lg:text-[7.5rem]">
+          <h1 className="font-heading text-[10.5vw] leading-[1.05] font-semibold text-cream sm:text-6xl md:text-7xl lg:text-8xl">
             <span className="animate-hero-reveal animation-delay-200 block">
               Vakmanschap
             </span>
             <span className="animate-hero-reveal animation-delay-400 block">
-              in <span className="text-gold-gradient italic">elke</span> vloer
+              in <span className="text-gold-gradient">elke</span> vloer
             </span>
           </h1>
 
@@ -177,7 +177,7 @@ export default function Home() {
                   </p>
                 </div>
                 <h2 className="font-heading text-4xl font-semibold text-charcoal md:text-6xl">
-                  Wat wij <span className="italic text-gold-dark">doen</span>
+                  Wat wij <span className="text-gold-dark">doen</span>
                 </h2>
               </div>
               <p className="font-body max-w-sm text-grey">
@@ -252,7 +252,7 @@ export default function Home() {
                   </p>
                 </div>
                 <h2 className="font-heading text-4xl font-semibold text-cream md:text-6xl">
-                  Uitgelichte <span className="italic text-gold-gradient">projecten</span>
+                  Uitgelichte <span className="text-gold-gradient">projecten</span>
                 </h2>
               </div>
               <Link
@@ -313,7 +313,7 @@ export default function Home() {
               </div>
               <h2 className="font-heading text-4xl font-semibold text-charcoal md:text-6xl">
                 Van eerste gesprek tot{" "}
-                <span className="italic text-gold-dark">perfecte vloer</span>
+                <span className="text-gold-dark">perfecte vloer</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -356,7 +356,7 @@ export default function Home() {
                 </div>
                 <h2 className="font-heading mb-8 text-4xl font-semibold text-cream md:text-5xl">
                   Vakmanschap met{" "}
-                  <span className="italic text-gold-gradient">passie</span>
+                  <span className="text-gold-gradient">passie</span>
                 </h2>
                 <p className="font-body mb-6 leading-relaxed text-cream/70">
                   MOVT Projects is opgericht door Mitch, gedreven door een
@@ -427,7 +427,7 @@ export default function Home() {
                 <span className="h-px w-12 bg-gold" />
               </div>
               <h2 className="font-heading text-4xl font-semibold text-charcoal md:text-6xl">
-                Trots op elk <span className="italic text-gold-dark">resultaat</span>
+                Trots op elk <span className="text-gold-dark">resultaat</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -472,7 +472,7 @@ export default function Home() {
             </p>
             <h2 className="font-heading mb-6 text-5xl font-semibold leading-tight text-cream md:text-7xl">
               Nieuwe vloer{" "}
-              <span className="text-gold-gradient italic">nodig?</span>
+              <span className="text-gold-gradient">nodig?</span>
             </h2>
             <p className="font-body mx-auto mb-12 max-w-xl text-lg text-cream/60">
               Vraag vandaag nog een gratis en vrijblijvende offerte aan. Binnen

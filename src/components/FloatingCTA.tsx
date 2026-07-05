@@ -24,10 +24,10 @@ export default function FloatingCTA() {
       }`}
     >
       {/* Mobile: full-width bar */}
-      <div className="md:hidden flex bg-charcoal border-t border-charcoal-light">
+      <div className="pb-safe md:hidden flex bg-charcoal/95 backdrop-blur-lg border-t border-charcoal-light">
         <a
           href="tel:+31628471152"
-          className="flex-1 flex items-center justify-center gap-2 py-3 text-cream text-sm font-medium hover:bg-charcoal-light transition-colors"
+          className="flex-1 flex items-center justify-center gap-2 py-3.5 min-h-[48px] text-cream text-sm font-medium hover:bg-charcoal-light transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default function FloatingCTA() {
         <div className="w-px bg-charcoal-light" />
         <Link
           href="/contact"
-          className="flex-1 flex items-center justify-center gap-2 py-3 bg-gold text-charcoal text-sm font-medium hover:bg-gold-light transition-colors"
+          className="flex-1 flex items-center justify-center gap-2 py-3.5 min-h-[48px] bg-gold text-charcoal text-sm font-medium hover:bg-gold-light transition-colors"
         >
           Offerte
         </Link>

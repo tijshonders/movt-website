@@ -75,13 +75,14 @@ export default function HeroSlideshow() {
       ))}
 
       {/* Slide progress bars */}
-      <div className="absolute bottom-10 left-1/2 z-20 flex -translate-x-1/2 gap-3">
+      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 gap-2 md:bottom-10">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className="group relative h-6 w-10 md:w-14"
-            aria-label={`Slide ${index + 1}`}
+            className="group relative h-11 w-11 md:w-14"
+            aria-label={`Foto ${index + 1} van ${slides.length}`}
+            aria-current={index === current}
           >
             <span className="absolute top-1/2 left-0 h-[2px] w-full -translate-y-1/2 overflow-hidden rounded-full bg-cream/25 transition-colors group-hover:bg-cream/40">
               {index === current && (

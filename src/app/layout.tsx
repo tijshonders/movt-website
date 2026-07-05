@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Sora, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Cinzel, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,17 +7,25 @@ import CookieBanner from "@/components/CookieBanner";
 import FloatingCTA from "@/components/FloatingCTA";
 import ExitPopup from "@/components/ExitPopup";
 
-const sora = Sora({
-  variable: "--font-sora",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const josefin = Josefin_Sans({
+  variable: "--font-josefin",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#1E2428",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://movt.nl"),
@@ -58,10 +66,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${sora.variable} ${inter.variable}`}>
-      <body className="min-h-screen flex flex-col antialiased">
+    <html lang="nl" className={`${cinzel.variable} ${josefin.variable}`}>
+      <body className="min-h-dvh flex flex-col antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[10000] focus:rounded focus:bg-gold focus:px-4 focus:py-2 focus:text-charcoal-dark"
+        >
+          Naar hoofdinhoud
+        </a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main" className="flex-1">{children}</main>
         <Footer />
         <FloatingCTA />
         <CookieBanner />
