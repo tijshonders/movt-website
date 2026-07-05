@@ -199,4 +199,82 @@ export const services: Service[] = [
       },
     ],
   },
+  {
+    slug: "behang",
+    title: "Behang & Wandafwerking",
+    shortTitle: "Behang",
+    description:
+      "Een perfecte vloer verdient perfecte wanden. MOVT Projects verzorgt professioneel behangwerk en wandafwerking — van luxe vinylbehang en fotobehang tot strak sauswerk. Zo krijgt uw interieur één doorlopende, hoogwaardige uitstraling.",
+    heroImage: "/projects/residential/woonkamer-visgraat-grijs.jpg",
+    icon: "M4 3h16v18H4V3zm4 0v18M4 9h4M4 15h4m4-8h6m-6 4h6m-6 4h4",
+    benefits: [
+      "Luxe behangsoorten en vinylbehang",
+      "Strak voorbereidingswerk: egaal en glad",
+      "Perfecte aansluiting op vloer en plinten",
+      "Fotobehang en maatwerk prints mogelijk",
+      "Gecombineerd met vloerproject: één planning",
+      "Advies over kleur en materiaal aan huis",
+    ],
+    faq: [
+      {
+        question: "Wat kost behangen per m²?",
+        answer:
+          "Professioneel behangwerk kost gemiddeld €12 tot €30 per m², afhankelijk van het type behang en de staat van de ondergrond. Bij een combinatie met een vloerproject hanteren wij scherpe combitarieven.",
+      },
+      {
+        question: "Moet ik zelf behang aanleveren?",
+        answer:
+          "Dat mag, maar hoeft niet. Wij werken met A-merken en adviseren u graag over de beste keuze voor uw ruimte, stijl en budget.",
+      },
+      {
+        question: "Verwijderen jullie ook oud behang?",
+        answer:
+          "Ja, wij verwijderen oud behang, repareren de ondergrond en zorgen voor een strak eindresultaat. Alles in één opdracht.",
+      },
+      {
+        question: "Kan behangen gecombineerd worden met een nieuwe vloer?",
+        answer:
+          "Zeker — dat is zelfs onze specialiteit. Wij plannen wand- en vloerwerk in de juiste volgorde, zodat u één aanspreekpunt heeft en het resultaat naadloos aansluit.",
+      },
+    ],
+  },
+  {
+    slug: "volledig-interieur",
+    title: "Volledig Interieur",
+    shortTitle: "Volledig Interieur",
+    description:
+      "Van vloer tot wand tot trap: MOVT Projects realiseert complete interieurtransformaties. Eén team, één planning, één aanspreekpunt — en een resultaat waarin alles klopt. Ideaal bij verhuizing, verbouwing of complete restyling.",
+    heroImage: "/projects/residential/woonkamer-kubus-donker.jpg",
+    icon: "M3 12l9-9 9 9M5 10v10h5v-6h4v6h5V10",
+    benefits: [
+      "Vloer, wanden en trap in één project",
+      "Eén aanspreekpunt van advies tot oplevering",
+      "Strakke planning: sneller klaar, minder overlast",
+      "Consistente stijl door het hele huis",
+      "Combitarief: voordeliger dan losse opdrachten",
+      "Persoonlijk interieuradvies aan huis",
+    ],
+    faq: [
+      {
+        question: "Wat valt er onder een volledig interieurproject?",
+        answer:
+          "Alles wat vast zit aan vloer en wand: PVC- of laminaatvloeren, gietvloeren, tapijttegels, trap renovatie, behang en sauswerk. Wij stemmen het complete plaatje op elkaar af.",
+      },
+      {
+        question: "Hoe lang duurt een complete interieurtransformatie?",
+        answer:
+          "Een gemiddelde woning is binnen 1 tot 2 weken volledig getransformeerd, afhankelijk van de oppervlakte en gekozen materialen. U krijgt vooraf een heldere planning.",
+      },
+      {
+        question: "Is een totaalproject voordeliger dan losse opdrachten?",
+        answer:
+          "Ja. Door werkzaamheden te combineren besparen we op voorrijkosten, materiaallogistiek en arbeidsuren. Dat voordeel verrekenen wij in een scherp combitarief.",
+      },
+      {
+        question: "Kan ik in mijn woning blijven tijdens de werkzaamheden?",
+        answer:
+          "In de meeste gevallen wel. We werken ruimte voor ruimte, zodat uw woning leefbaar blijft. Bij grotere projecten adviseren we een korte uitloop naar logeeradres.",
+      },
+    ],
+  },
 ];

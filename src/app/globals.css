@@ -34,10 +34,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), system-ui, sans-serif;
 }
 
-/* Brand voice: wide-tracked uppercase display headings, like the wordmark */
-h1, h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+/* Brand voice: wide-tracked uppercase display headings, like the wordmark.
+   In @layer base so Tailwind utilities (normal-case etc.) can override. */
+@layer base {
+  h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
 }
 
 /* Touch optimization — kill 300ms tap delay */

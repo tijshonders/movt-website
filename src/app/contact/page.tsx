@@ -24,10 +24,13 @@ export default function ContactPage() {
     telephone: "+31628471152",
     email: "info@movt.nl",
     url: "https://movt.nl",
-    areaServed: {
-      "@type": "Country",
-      name: "Netherlands",
-    },
+    areaServed: [
+      { "@type": "City", name: "Rhenen" },
+      { "@type": "City", name: "Lienden" },
+      { "@type": "City", name: "Veenendaal" },
+      { "@type": "City", name: "Tiel" },
+      { "@type": "Country", name: "Netherlands" },
+    ],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

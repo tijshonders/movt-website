@@ -97,12 +97,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               {[
-                { label: "PVC Visgraat", href: "#" },
-                { label: "Gietvloeren", href: "#" },
-                { label: "Tapijttegels", href: "#" },
-                { label: "Laminaat", href: "#" },
-                { label: "Trap Renovatie", href: "#" },
-                { label: "Commercieel", href: "#" },
+                { label: "PVC Visgraat", href: "/diensten/pvc-visgraat" },
+                { label: "Gietvloeren", href: "/diensten/gietvloeren" },
+                { label: "Tapijttegels", href: "/diensten/tapijttegels" },
+                { label: "Laminaat", href: "/diensten/laminaat" },
+                { label: "Trap Renovatie", href: "/diensten/trap-renovatie" },
+                { label: "Behang", href: "/diensten/behang" },
+                { label: "Volledig Interieur", href: "/diensten/volledig-interieur" },
+                { label: "Commercieel", href: "/diensten/commerciele-projecten" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link

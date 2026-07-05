@@ -10,6 +10,8 @@ const services = [
   { name: 'Tapijttegels', href: '/diensten/tapijttegels' },
   { name: 'Laminaat', href: '/diensten/laminaat' },
   { name: 'Trap Renovatie', href: '/diensten/trap-renovatie' },
+  { name: 'Behang & Wandafwerking', href: '/diensten/behang' },
+  { name: 'Volledig Interieur', href: '/diensten/volledig-interieur' },
   { name: 'Commerciële Projecten', href: '/diensten/commerciele-projecten' },
 ];
 
