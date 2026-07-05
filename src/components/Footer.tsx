@@ -180,8 +180,22 @@ export default function Footer() {
       <div className="relative z-10 border-t border-cream/10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-cream/50 text-xs">
-            &copy; 2025 MOVT Projects. Alle rechten voorbehouden.
+            &copy; 2026 MOVT Projects. Alle rechten voorbehouden.
           </p>
+          <a
+            href="https://elev8studio.nl"
+            target="_blank"
+            rel="noopener"
+            className="group text-xs text-cream/50 transition-colors hover:text-gold"
+            title="Website ontworpen en gebouwd door Elev8 Studio"
+          >
+            <span className="text-gold/80 group-hover:text-gold transition-colors">Elev8ed</span>
+            {" "}by{" "}
+            <span className="underline decoration-gold/40 underline-offset-2 group-hover:decoration-gold">
+              Elev8 Studio
+            </span>
+            <span aria-hidden> ↗</span>
+          </a>
           <div className="flex items-center gap-6">
             <Link
               href="/privacy"
