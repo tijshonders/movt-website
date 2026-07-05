@@ -21,9 +21,9 @@ export default function ContactPage() {
     name: "MOVT Projects",
     description:
       "Specialist in PVC visgraat, gietvloeren, tapijttegels en meer door heel Nederland.",
-    telephone: "+31612345678",
-    email: "info@movtprojects.nl",
-    url: "https://movtprojects.nl",
+    telephone: "+31628471152",
+    email: "info@movt.nl",
+    url: "https://movt.nl",
     areaServed: {
       "@type": "Country",
       name: "Netherlands",
@@ -85,10 +85,10 @@ export default function ContactPage() {
                 <h3 className="font-heading text-lg font-semibold text-charcoal">Telefoon</h3>
               </div>
               <a
-                href="tel:0612345678"
+                href="tel:+31628471152"
                 className="font-body text-lg text-gold hover:text-gold-dark transition"
               >
-                06-12345678
+                06 28 47 11 52
               </a>
             </div>
 
@@ -103,10 +103,10 @@ export default function ContactPage() {
                 <h3 className="font-heading text-lg font-semibold text-charcoal">Email</h3>
               </div>
               <a
-                href="mailto:info@movtprojects.nl"
+                href="mailto:info@movt.nl"
                 className="font-body text-lg text-gold hover:text-gold-dark transition"
               >
-                info@movtprojects.nl
+                info@movt.nl
               </a>
             </div>
 
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 <h3 className="font-heading text-lg font-semibold text-charcoal">WhatsApp</h3>
               </div>
               <a
-                href="https://wa.me/31612345678"
+                href="https://wa.me/31628471152"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-heading text-sm font-semibold text-white transition hover:bg-green-700"

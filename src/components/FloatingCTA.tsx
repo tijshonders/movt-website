@@ -26,7 +26,7 @@ export default function FloatingCTA() {
       {/* Mobile: full-width bar */}
       <div className="md:hidden flex bg-charcoal border-t border-charcoal-light">
         <a
-          href="tel:+31612345678"
+          href="tel:+31628471152"
           className="flex-1 flex items-center justify-center gap-2 py-3 text-cream text-sm font-medium hover:bg-charcoal-light transition-colors"
         >
           <svg
@@ -55,7 +55,7 @@ export default function FloatingCTA() {
       {/* Desktop: floating button group */}
       <div className="hidden md:flex flex-col gap-2">
         <a
-          href="tel:+31612345678"
+          href="tel:+31628471152"
           className="flex items-center gap-2 px-4 py-3 bg-charcoal text-cream rounded-lg shadow-lg hover:bg-charcoal-light transition-colors"
         >
           <svg

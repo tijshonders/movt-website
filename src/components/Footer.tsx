@@ -146,19 +146,19 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <span className="text-cream/70">Email:</span>
                 <a
-                  href="mailto:info@movtprojects.nl"
+                  href="mailto:info@movt.nl"
                   className="text-cream/70 hover:text-gold transition-colors"
                 >
-                  info@movtprojects.nl
+                  info@movt.nl
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-cream/70">Telefoon:</span>
                 <a
-                  href="tel:0612345678"
+                  href="tel:+31628471152"
                   className="text-cream/70 hover:text-gold transition-colors"
                 >
-                  06-12345678
+                  06 28 47 11 52
                 </a>
               </li>
               <li className="flex items-start gap-2">

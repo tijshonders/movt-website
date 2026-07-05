@@ -69,7 +69,7 @@ export function ContactForm() {
           id="telefoon"
           name="telefoon"
           className="w-full rounded-lg border border-cream-dark bg-white p-4 font-body text-charcoal transition focus:border-gold focus:ring-2 focus:ring-gold focus:outline-none"
-          placeholder="06-12345678"
+          placeholder="06 28 47 11 52"
         />
       </div>
 
