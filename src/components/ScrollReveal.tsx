@@ -19,20 +19,26 @@ export default function ScrollReveal({
     const el = ref.current;
     if (!el) return;
 
+    const show = () => el.classList.add("scroll-reveal-visible");
+
+    const fallback = setTimeout(() => show(), 2000 + delay);
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            el.classList.add("scroll-reveal-visible");
-          }, delay);
+          clearTimeout(fallback);
+          setTimeout(show, delay);
           observer.unobserve(el);
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.05, rootMargin: "0px 0px 50px 0px" }
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      clearTimeout(fallback);
+      observer.disconnect();
+    };
   }, [delay]);
 
   return (
