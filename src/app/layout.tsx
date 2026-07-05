@@ -30,11 +30,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://movt.nl"),
   title: {
-    default: "MOVT Projects — Specialist in PVC Visgraat & Vloeren",
+    default: "MOVT Projects — Vloerenspecialist Rhenen, Lienden & de Betuwe",
     template: "%s | MOVT Projects",
   },
   description:
-    "MOVT Projects is dé specialist in PVC visgraat, gietvloeren, tapijttegels en meer. Vakmanschap door heel Nederland. Vraag een gratis offerte aan.",
+    "MOVT Projects is dé vloerenspecialist van Rhenen, Lienden, Veenendaal, Tiel en de Betuwe. PVC visgraat, gietvloeren, laminaat en meer. Gratis offerte binnen 48 uur.",
   keywords: [
     "PVC visgraat",
     "vloeren leggen",
@@ -42,9 +42,12 @@ export const metadata: Metadata = {
     "tapijttegels",
     "laminaat",
     "trap renovatie",
-    "vloerlegger",
+    "vloerenspecialist Rhenen",
+    "vloerenspecialist Lienden",
+    "vloeren Betuwe",
     "MOVT Projects",
   ],
+  alternates: { canonical: "https://movt.nl" },
   openGraph: {
     type: "website",
     locale: "nl_NL",
@@ -65,9 +68,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://movt.nl/#business",
+    name: "MOVT Projects",
+    description:
+      "Vloerenspecialist in Rhenen, Lienden, Veenendaal, Tiel en de Betuwe. PVC visgraat, gietvloeren, tapijttegels, laminaat, trap renovatie en behang.",
+    url: "https://movt.nl",
+    telephone: "+31628471152",
+    email: "info@movt.nl",
+    logo: "https://movt.nl/brand/logo-full.png",
+    image: "https://movt.nl/brand/logo-full.png",
+    priceRange: "$$",
+    areaServed: [
+      { "@type": "City", name: "Rhenen" },
+      { "@type": "City", name: "Lienden" },
+      { "@type": "City", name: "Veenendaal" },
+      { "@type": "City", name: "Tiel" },
+      { "@type": "Place", name: "Betuwe" },
+    ],
+  };
+
   return (
     <html lang="nl" className={`${outfit.variable} ${workSans.variable}`}>
       <body className="min-h-dvh flex flex-col antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[10000] focus:rounded focus:bg-gold focus:px-4 focus:py-2 focus:text-charcoal-dark"

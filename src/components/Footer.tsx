@@ -118,18 +118,39 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Navigatie */}
+          {/* Column 3: Navigatie + Werkgebied */}
           <div>
             <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold mb-4">
               Navigatie
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-8">
               {[
                 { label: "Home", href: "/" },
                 { label: "Projecten", href: "/projecten" },
                 { label: "Over Ons", href: "/over-ons" },
                 { label: "Blog", href: "/blog" },
                 { label: "Contact", href: "/contact" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-cream/70 hover:text-gold transition-colors text-sm"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold mb-4">
+              Werkgebied
+            </h4>
+            <ul className="space-y-2">
+              {[
+                { label: "Vloeren Rhenen", href: "/werkgebied/rhenen" },
+                { label: "Vloeren Lienden", href: "/werkgebied/lienden" },
+                { label: "Vloeren Betuwe", href: "/werkgebied/betuwe" },
+                { label: "Vloeren Veenendaal", href: "/werkgebied/veenendaal" },
+                { label: "Vloeren Tiel", href: "/werkgebied/tiel" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link

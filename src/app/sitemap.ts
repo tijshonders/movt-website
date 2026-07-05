@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/data/services";
 import { blogPosts } from "@/data/blog";
+import { locations } from "@/data/locations";
 
 const BASE = "https://movt.nl";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE, changeFrequency: "weekly", priority: 1 },
+    { url: `${BASE}/diensten`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/projecten`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/over-ons`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/blog`, changeFrequency: "weekly", priority: 0.8 },
@@ -26,5 +28,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...servicePages, ...blogPages];
+  const locationPages: MetadataRoute.Sitemap = locations.map((location) => ({
+    url: `${BASE}/werkgebied/${location.slug}`,
+    changeFrequency: "monthly",
+    priority: 0.95,
+  }));
+
+  return [...staticPages, ...servicePages, ...locationPages, ...blogPages];
 }

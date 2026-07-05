@@ -23,8 +23,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   return {
-    title: `${service.title} | MOVT Projects`,
+    title: `${service.title} — Rhenen, Lienden & de Betuwe`,
     description: service.description,
+    alternates: { canonical: `https://movt.nl/diensten/${service.slug}` },
+    openGraph: {
+      title: `${service.title} | MOVT Projects`,
+      description: service.description,
+      images: [service.heroImage],
+    },
   };
 }
 
@@ -37,6 +43,8 @@ function getRelatedProjects(slug: string) {
     laminaat: ["Laminaat"],
     "trap-renovatie": ["Trap Renovatie"],
     "commerciele-projecten": ["PVC Visgraat", "Tapijttegels", "Gietvloer", "Designvloer"],
+    behang: ["PVC Visgraat", "Designvloer"],
+    "volledig-interieur": ["PVC Visgraat", "Trap Renovatie", "Designvloer"],
   };
 
   const types = typeMap[slug] || [];
@@ -64,11 +72,31 @@ export default async function ServicePage({ params }: Props) {
     })),
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.description,
+    url: `https://movt.nl/diensten/${service.slug}`,
+    provider: { "@id": "https://movt.nl/#business" },
+    areaServed: [
+      { "@type": "City", name: "Rhenen" },
+      { "@type": "City", name: "Lienden" },
+      { "@type": "City", name: "Veenendaal" },
+      { "@type": "City", name: "Tiel" },
+      { "@type": "Place", name: "Betuwe" },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
       {/* Hero */}
