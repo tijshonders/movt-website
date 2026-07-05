@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand palette — taken directly from the MOVT logo */
-  --color-charcoal: #333B3F;
-  --color-charcoal-light: #434C51;
-  --color-charcoal-dark: #171B1E;
-  --color-gold: #A99B84;
-  --color-gold-light: #C2B6A2;
-  --color-gold-dark: #6E6250;
+  /* Brand palette — sampled from the MOVT logo (IMG_7137) */
+  --color-charcoal: #2C3436;
+  --color-charcoal-light: #3C4649;
+  --color-charcoal-dark: #14191B;
+  --color-gold: #A49983;
+  --color-gold-light: #BFB6A3;
+  --color-gold-dark: #6B6252;
   --color-cream: #F5F2ED;
   --color-cream-dark: #E8E3DB;
   --color-grey: #7D8286;
@@ -155,8 +155,8 @@ button, a {
 }
 
 @keyframes pulseGold {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(169, 155, 132, 0.45); }
-  50% { box-shadow: 0 0 0 12px rgba(169, 155, 132, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(164, 153, 131, 0.45); }
+  50% { box-shadow: 0 0 0 12px rgba(164, 153, 131, 0); }
 }
 
 @keyframes bounce-subtle {
@@ -223,7 +223,7 @@ button, a {
 
 /* Gold gradient text — bronze/taupe from logo */
 .text-gold-gradient {
-  background: linear-gradient(110deg, #8C7F69 0%, #C2B6A2 25%, #E5DCCB 50%, #C2B6A2 75%, #8C7F69 100%);
+  background: linear-gradient(110deg, #877D68 0%, #BFB6A3 25%, #E3DBCA 50%, #BFB6A3 75%, #877D68 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -262,12 +262,12 @@ button, a {
 
 /* Herringbone pattern */
 .herringbone-bg {
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l20 10L0 20V0zm40 0v20L20 10l20-10zM0 20l20 10L0 40V20zm40 0v20L20 30l20-10z' fill='%23A99B84' fill-opacity='0.06'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l20 10L0 20V0zm40 0v20L20 10l20-10zM0 20l20 10L0 40V20zm40 0v20L20 30l20-10z' fill='%23A49983' fill-opacity='0.06'/%3E%3C/svg%3E");
 }
 
 /* Big outline text (section backdrops) */
 .text-outline {
-  -webkit-text-stroke: 1px rgba(169, 155, 132, 0.18);
+  -webkit-text-stroke: 1px rgba(164, 153, 131, 0.18);
   color: transparent;
 }
 

@@ -24,7 +24,7 @@ const workSans = Work_Sans({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#333B3F",
+  themeColor: "#2C3436",
 };
 
 export const metadata: Metadata = {
