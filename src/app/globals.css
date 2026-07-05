@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-charcoal: #1E2428;
-  --color-charcoal-light: #2A3035;
-  --color-charcoal-dark: #0A0A0A;
-  --color-gold: #C4A265;
-  --color-gold-light: #D4B87A;
-  --color-gold-dark: #A8884F;
+  /* Brand palette — taken directly from the MOVT logo */
+  --color-charcoal: #333B3F;
+  --color-charcoal-light: #434C51;
+  --color-charcoal-dark: #171B1E;
+  --color-gold: #A99B84;
+  --color-gold-light: #C2B6A2;
+  --color-gold-dark: #6E6250;
   --color-cream: #F5F2ED;
   --color-cream-dark: #E8E3DB;
-  --color-grey: #8A8A8A;
-  --color-grey-light: #B5B5B5;
+  --color-grey: #7D8286;
+  --color-grey-light: #B2B6B9;
 
-  --font-heading: var(--font-cinzel);
-  --font-body: var(--font-josefin);
+  --font-heading: var(--font-outfit);
+  --font-body: var(--font-work-sans);
 }
 
 html {
@@ -30,7 +31,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading), Georgia, serif;
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+/* Brand voice: wide-tracked uppercase display headings, like the wordmark */
+h1, h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Touch optimization — kill 300ms tap delay */
@@ -148,8 +155,8 @@ button, a {
 }
 
 @keyframes pulseGold {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(196, 162, 101, 0.4); }
-  50% { box-shadow: 0 0 0 12px rgba(196, 162, 101, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(169, 155, 132, 0.45); }
+  50% { box-shadow: 0 0 0 12px rgba(169, 155, 132, 0); }
 }
 
 @keyframes bounce-subtle {
@@ -214,9 +221,9 @@ button, a {
 .animation-delay-700 { animation-delay: 0.7s; }
 .animation-delay-800 { animation-delay: 0.8s; }
 
-/* Gold gradient text */
+/* Gold gradient text — bronze/taupe from logo */
 .text-gold-gradient {
-  background: linear-gradient(110deg, #A8884F 0%, #D4B87A 25%, #F0DCA8 50%, #D4B87A 75%, #A8884F 100%);
+  background: linear-gradient(110deg, #8C7F69 0%, #C2B6A2 25%, #E5DCCB 50%, #C2B6A2 75%, #8C7F69 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -255,12 +262,12 @@ button, a {
 
 /* Herringbone pattern */
 .herringbone-bg {
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l20 10L0 20V0zm40 0v20L20 10l20-10zM0 20l20 10L0 40V20zm40 0v20L20 30l20-10z' fill='%23C4A265' fill-opacity='0.05'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l20 10L0 20V0zm40 0v20L20 10l20-10zM0 20l20 10L0 40V20zm40 0v20L20 30l20-10z' fill='%23A99B84' fill-opacity='0.06'/%3E%3C/svg%3E");
 }
 
 /* Big outline text (section backdrops) */
 .text-outline {
-  -webkit-text-stroke: 1px rgba(196, 162, 101, 0.15);
+  -webkit-text-stroke: 1px rgba(169, 155, 132, 0.18);
   color: transparent;
 }
 

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cinzel, Josefin_Sans } from "next/font/google";
+import { Outfit, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,24 +7,24 @@ import CookieBanner from "@/components/CookieBanner";
 import FloatingCTA from "@/components/FloatingCTA";
 import ExitPopup from "@/components/ExitPopup";
 
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
-const josefin = Josefin_Sans({
-  variable: "--font-josefin",
+const workSans = Work_Sans({
+  variable: "--font-work-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#1E2428",
+  themeColor: "#333B3F",
 };
 
 export const metadata: Metadata = {
@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${cinzel.variable} ${josefin.variable}`}>
+    <html lang="nl" className={`${outfit.variable} ${workSans.variable}`}>
       <body className="min-h-dvh flex flex-col antialiased">
         <a
           href="#main"
